@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="TECTOR Archive is a personal desktop workflow for copying selected game-development files to the owner's Google Drive using rclone.">
+<meta name="robots" content="index,follow">
+<title>TECTOR Archive — Personal Google Drive Backup</title>
+<link rel="canonical" href="https://afreedomlife.github.io/tector-archive/">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap head-inner"><a class="brand" href="./">TECTOR <span>ARCHIVE</span></a><nav aria-label="Main navigation"><a href="#how-it-works">How it works</a><a href="privacy.html">Privacy Policy</a><a href="https://github.com/Afreedomlife/tector-archive" rel="noopener">Source and support</a></nav></div></header>
+<main class="wrap">
+<section class="intro">
+<div class="status">Personal-use desktop utility</div>
+<p class="eyebrow">Independent backup workflow</p>
+<h1>Keep the work. Free the workspace.</h1>
+<p class="lede">TECTOR Archive is a small, owner-operated workflow for backing up selected TECTOR game-development files—such as renders, test videos, reports and project snapshots—from a local Windows PC to the owner's Google Drive using <a href="https://rclone.org/" rel="noopener">rclone</a>.</p>
+<p class="lede" lang="th">TECTOR Archive ใช้สำรองไฟล์พัฒนาเกมของเจ้าของบัญชีจากคอมพิวเตอร์ไปยัง Google Drive ผ่าน rclone เป็นเครื่องมือส่วนตัว ไม่ใช่บริการฝากไฟล์สาธารณะหรือเว็บไซต์เกม</p>
+<div class="buttons"><a class="btn" href="privacy.html">Read Privacy Policy</a><a class="btn secondary" href="https://github.com/Afreedomlife/tector-archive" rel="noopener">View public information repo</a></div>
+</section>
+<div class="grid" id="how-it-works">
+<div class="card"><h2>1. Select files</h2><p>The owner chooses specific folders and files on their own computer. Nothing is uploaded just by visiting this site.</p></div>
+<div class="card"><h2>2. Authorize Drive</h2><p>The rclone desktop client uses Google OAuth with the <code>drive.file</code> scope to create and manage files that the app is permitted to access.</p></div>
+<div class="card"><h2>3. Copy, do not sync-delete</h2><p>The planned backup workflow uses copy-only operations. Local original files remain intact. Destructive cleanup requires separate manual approval.</p></div>
+<div class="card"><h2>4. Verify backups</h2><p>The owner verifies upload results, checks backup manifests and tests restoration before considering any local-space recovery.</p></div>
+</div>
+<section class="section">
+<h2>What this website does <em>not</em> do</h2>
+<ul>
+<li>It does not authenticate users, offer cloud storage accounts, or request access to Google Drive itself.</li>
+<li>It does not collect files, OAuth credentials, personal information, payment data or analytics.</li>
+<li>It does not publish the TECTOR game code, assets or backup contents.</li>
+<li>It is not affiliated with, endorsed by or operated by Google or the rclone project.</li>
+</ul>
+</section>
+<section class="section">
+<h2>Google Drive access</h2>
+<p>This personal setup requests the Google Drive API scope <code>https://www.googleapis.com/auth/drive.file</code>, which limits access to Drive files the app creates or is specifically authorized to access. The Google consent screen displays the permission requested. Tokens are kept on the owner's device by rclone, not by this website. Review the <a href="privacy.html">Privacy Policy</a> for details, retention and revocation.</p>
+<p class="note"><strong>Security:</strong> Never enter your Google OAuth client secret, access token, or TECTOR files into this public website or its GitHub issue tracker.</p>
+</section>
+<section class="section">
+<h2>Help and contact</h2>
+<p>Questions about the public information pages can be raised through <a href="https://github.com/Afreedomlife/tector-archive/issues" rel="noopener">GitHub Issues</a>. Issue threads are public; do not post credentials, personal data or private file names. For rclone technical guidance, see the <a href="https://rclone.org/drive/" rel="noopener">official Google Drive documentation</a>.</p>
+</section>
+</main>
+<footer><div class="wrap foot"><span>TECTOR Archive · Independent personal backup utility · Updated 12 October 2026</span><span><a href="privacy.html">Privacy</a> · <a href="https://github.com/Afreedomlife/tector-archive" rel="noopener">GitHub</a></span></div></footer>
+</body>
+</html>
