@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Privacy Policy for the TECTOR Archive personal rclone and Google Drive backup workflow.">
+<title>Privacy Policy — TECTOR Archive</title>
+<link rel="canonical" href="https://afreedomlife.github.io/tector-archive/privacy.html">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap head-inner"><a class="brand" href="./">TECTOR <span>ARCHIVE</span></a><nav aria-label="Main navigation"><a href="./">Home</a><a href="privacy.html" aria-current="page">Privacy Policy</a><a href="https://github.com/Afreedomlife/tector-archive" rel="noopener">GitHub</a></nav></div></header>
+<main class="wrap textcol">
+<p class="eyebrow">Privacy and data handling</p>
+<h1>Privacy Policy</h1>
+<p class="small">Effective date: 12 October 2026 · Operator: the owner of the GitHub account <a href="https://github.com/Afreedomlife" rel="noopener">Afreedomlife</a> · Contact: <a href="https://github.com/Afreedomlife/tector-archive/issues" rel="noopener">GitHub Issues</a> (public, no secrets)</p>
+<div class="note">TECTOR Archive is a private-use desktop backup workflow using the independent, open-source rclone software and the owner's Google Drive account. The informational website does not request Google authorization or receive backup files.</div>
+<section class="section"><h2>1. What data is accessed</h2>
+<p>When the owner separately configures rclone on their own Windows computer, rclone may read only locally selected files and associated metadata, such as file names, relative paths, size and modification time, for the purpose of copying backups to Google Drive. The uploaded Drive files contain the backup data selected by the owner.</p>
+<p>The app is configured to request the Google Drive OAuth scope <code>https://www.googleapis.com/auth/drive.file</code>. This scope permits access to files that the app creates or that the owner specifically grants it access to; it is not intended to grant broad access to every file in the owner's Drive. No scope beyond what the consent screen lists should be assumed.</p>
+</section>
+<section class="section"><h2>2. Purpose and processing</h2>
+<p>Google user data is used only to authenticate access to the owner's Drive, upload and verify selected backups, list files the app can access, and, if explicitly initiated by the owner, restore copies. A copy-only procedure is preferred; the backup workflow does not authorize automatic deletion of original local files.</p>
+<p>Selected file contents and metadata are transmitted between the owner's PC and Google Drive over the secure connections provided by the Google Drive API and rclone. The public website has no upload endpoint, user database, or backend receiving backup contents.</p>
+</section>
+<section class="section"><h2>3. Credentials and storage</h2>
+<p>Google OAuth authorization occurs in Google's authentication flow. rclone stores its connection configuration and OAuth tokens locally on the owner's computer. These credentials must remain private and should be protected by operating-system permissions and, when configured, rclone's encrypted configuration feature. No client secret, refresh token, access token or private file is published in this repository or collected through this website.</p>
+<p>Backup files are stored in the owner's Google Drive and are subject to the Google account's storage and retention settings. File manifests and local logs, if the owner chooses to create them, remain under the owner's control.</p>
+</section>
+<section class="section"><h2>4. Sharing, sale and advertising</h2>
+<p>The operator does not sell, rent or share Google user data for advertising, profiling or model training. No third-party analytics or ad scripts are included in this website. Google processes the uploaded files as the selected cloud storage provider; rclone is the separate software used to transfer them.</p>
+<p>This site is hosted by GitHub Pages. GitHub may process normal hosting and access information in accordance with <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub's privacy statement</a>. This informational site has no custom analytics, cookies or sign-in form.</p>
+</section>
+<section class="section"><h2>5. Retention and deletion</h2>
+<p>The app operator runs no central service that retains copies. Cloud backup files remain in the owner's Drive until the owner deletes them using Google Drive or an explicitly chosen command. Local rclone configuration and tokens remain on the owner's device until the owner deletes or replaces that configuration. Revoking OAuth access does not delete files previously copied to Google Drive.</p>
+</section>
+<section class="section"><h2>6. Your control and revocation</h2>
+<ul>
+<li>Review or revoke app access in your <a href="https://myaccount.google.com/connections" rel="noopener">Google Account's third-party connections</a>.</li>
+<li>Remove the configured rclone remote and its saved credentials from the local rclone configuration when no longer needed.</li>
+<li>Inspect, download or delete any archived file directly from your own Google Drive.</li>
+<li>To ask about this informational page, open a <a href="https://github.com/Afreedomlife/tector-archive/issues" rel="noopener">public GitHub Issue</a> without posting sensitive information.</li>
+</ul>
+</section>
+<section class="section"><h2>7. Updates</h2>
+<p>This notice may change when the backup workflow changes. Material changes will be posted on this website with an updated effective date. No additional use of Google user data is implied without an appropriate authorization request.</p>
+</section>
+<section class="section" lang="th"><h2>สรุปนโยบายความเป็นส่วนตัว (ภาษาไทย)</h2>
+<p>TECTOR Archive เป็นระบบสำรองไฟล์พัฒนาเกมสำหรับใช้งานส่วนตัว โดย rclone อ่านเฉพาะไฟล์ที่เจ้าของเลือกจาก PC แล้วคัดลอกไป Google Drive ของเจ้าของบัญชีโดยตรง หน้าเว็บไซต์นี้ไม่ได้รับไฟล์ ไม่รับรหัสผ่าน ไม่เก็บ OAuth Token และไม่มีโฆษณาหรือระบบติดตามการใช้งาน</p>
+<p>การเชื่อมต่อ Google ใช้สิทธิ์ <code>drive.file</code> เพื่อจัดการไฟล์ที่แอปสร้างหรือได้รับอนุญาตโดยเฉพาะ Token ของ rclone ถูกเก็บในเครื่องของเจ้าของบัญชี ไฟล์สำรองจะอยู่ใน Google Drive จนกว่าเจ้าของลบเอง สามารถถอนสิทธิ์ได้ที่ <a href="https://myaccount.google.com/connections" rel="noopener">บัญชี Google</a> การถอนสิทธิ์ไม่ได้ลบไฟล์สำรองที่อัปโหลดไปแล้วโดยอัตโนมัติ</p>
+</section>
+</main>
+<footer><div class="wrap foot"><span>TECTOR Archive · Independent personal backup utility</span><span><a href="./">Home</a> · <a href="https://github.com/Afreedomlife/tector-archive" rel="noopener">GitHub</a></span></div></footer>
+</body>
+</html>
